@@ -1,0 +1,52 @@
+/* Reset básico */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #2F2F2F;
+    padding: 10px 20px;
+    color: #FFFFFF;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #DADADA;
+}
+
+.navigation a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #BFBFBF;
+    font-size: 16px;
+}
+
+.navigation a:hover {
+    color: #FFFFFF;
+}
+
+.actions {
+    margin-left: auto;
+}
+
+.actions .btn-login {
+    background-color: transparent;
+    border: 1px solid #4D4D4D;
+    color: #BFBFBF;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.actions .btn-login:hover {
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+}
