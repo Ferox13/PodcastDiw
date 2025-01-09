@@ -5,28 +5,27 @@
     overflow: hidden;
     display: flex;
     flex-direction: column; /* Asegura que los elementos se dispongan en columna */
-  
-    /* Flexibilidad de los hijos de .carousel */
-    > * {
-      flex: 0 0 100%;
-    }
-  
-    /* Animación en hover */
-    &:hover .group {
-      animation-play-state: paused;
-    }
-  }
-  
-  .group {
+}
+
+.carousel > * {
+    flex: 0 0 100%;
+}
+
+/* Animación en hover */
+.carousel:hover .group {
+    animation-play-state: paused;
+}
+
+.group {
     display: flex;
     flex-direction: column; /* Asegura disposición vertical */
     gap: 20px;
     padding-bottom: 20px; /* Espacio entre la última y la primera tarjeta */
     will-change: transform; /* Optimización de animación */
     animation: scrolling 10s linear infinite;
-  }
-  
-  .card {
+}
+
+.card {
     width: 50%;
     color: white;
     border-radius: 24px;
@@ -36,63 +35,57 @@
     justify-content: center;
     align-items: center;
     min-height: 200px;
-  
-    /* Estilos específicos para las tarjetas según su posición */
-    &:nth-child(1) {
-      background: #7958ff;
-    }
-    &:nth-child(2) {
-      background: #5d34f2;
-    }
-    &:nth-child(3) {
-      background: #4300da;
-    }
-  }
-  
-  @keyframes scrolling {
+}
+
+.card:nth-child(1) {
+    background: #7958ff;
+}
+
+.card:nth-child(2) {
+    background: #5d34f2;
+}
+
+.card:nth-child(3) {
+    background: #4300da;
+}
+
+@keyframes scrolling {
     0% {
-      transform: translateY(0); /* Empieza en la posición inicial */
+        transform: translateY(0); /* Empieza en la posición inicial */
     }
     100% {
-      transform: translateY(-100%); /* Se mueve hacia arriba */
+        transform: translateY(-100%); /* Se mueve hacia arriba */
     }
-  }
-  
+}
 
-
-
-
-
-
-  .carousel2 {
+.carousel2 {
     margin: 0 auto;
     padding: 20px 0;
     max-width: 700px;
     overflow: hidden;
     display: flex;
     flex-direction: column; /* Asegura que los elementos se dispongan en columna */
-  
-    /* Flexibilidad de los hijos de .carousel */
-    > * {
-      flex: 0 0 100%;
-    }
-  
-    /* Animación en hover */
-    &:hover .group2 {
-      animation-play-state: paused;
-    }
-  }
-  
-  .group2 {
+}
+
+.carousel2 > * {
+    flex: 0 0 100%;
+}
+
+/* Animación en hover */
+.carousel2:hover .group2 {
+    animation-play-state: paused;
+}
+
+.group2 {
     display: flex;
     flex-direction: column; /* Asegura disposición vertical */
     gap: 20px;
     padding-bottom: 20px; /* Espacio entre la última y la primera tarjeta */
     will-change: transform; /* Optimización de animación */
     animation: scrolling 10s linear infinite;
-  }
-  
-  .card2 {
+}
+
+.card2 {
     width: 50%;
     color: white;
     border-radius: 24px;
@@ -102,25 +95,17 @@
     justify-content: center;
     align-items: center;
     min-height: 200px;
-  
-    /* Estilos específicos para las tarjetas según su posición */
-    &:nth-child(1) {
-      background: #7958ff;
-    }
-    &:nth-child(2) {
-      background: #5d34f2;
-    }
-    &:nth-child(3) {
-      background: #4300da;
-    }
-  }
-  
-  @keyframes scrolling {
-    0% {
-      transform: translateY(0); /* Empieza en la posición inicial */
-    }
-    100% {
-      transform: translateY(-100%); /* Se mueve hacia arriba */
-    }
-  }
-  
+}
+
+/* Estilos específicos para las tarjetas según su posición */
+.card2:nth-child(1) {
+    background: #7958ff;
+}
+
+.card2:nth-child(2) {
+    background: #5d34f2;
+}
+
+.card2:nth-child(3) {
+    background: #4300da;
+}
