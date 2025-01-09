@@ -1,7 +1,7 @@
 # Proyecto DIW: Podcast sobre Diseño de Interfaces Web
 
 ## Autores
-- **Fernando Rodrigues**  
+- **Fernando Rodriguez**  
 - **Adrián Castro**  
 
 ---
