@@ -82,5 +82,3 @@ Este proyecto combina la creación de un **podcast** relacionado con el diseño 
 - [Cómo publicar en GitHub Pages](https://pages.github.com/).
 - [Cómo subir contenido a archive.org](https://help.archive.org/).
 - [Validación de HTML y CSS](https://validator.w3.org/).
-
-¡Buena suerte y disfrutad del proceso creativo!
