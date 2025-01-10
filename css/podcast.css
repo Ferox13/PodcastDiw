@@ -14,6 +14,10 @@ html {
     padding: 10px 20px;
     color: #FFFFFF;
 }
+.header img {
+    max-width: 100px;
+    border-radius: 10px;
+}
 
 .logo {
     font-size: 20px;
@@ -49,4 +53,40 @@ html {
 .actions .btn-login:hover {
     color: #FFFFFF;
     border-color: #FFFFFF;
+}
+
+.titulo {
+    background-color: #d9a39b;
+    padding: 20px;
+    text-align: center;
+}
+.titulo img {
+    max-width: 100px;
+    border-radius: 10px;
+}
+.titulo h1 {
+    margin: 10px 0;
+}
+.titulo p {
+    font-size: 1rem;
+    color: #000;
+}
+.episodes {
+    padding: 20px;
+}
+.episode {
+    background-color: #333;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.episode h2 {
+    margin: 0 0 10px;
+    font-size: 1.5rem;
+}
+.episode p {
+    margin: 10px 0;
+}
+.episode small {
+    color: #aaa;
 }
