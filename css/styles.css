@@ -1,3 +1,59 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #2F2F2F;
+    padding: 10px 20px;
+    color: #FFFFFF;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #DADADA;
+}
+
+.navigation a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #BFBFBF;
+    font-size: 16px;
+}
+
+.navigation a:hover {
+    color: #FFFFFF;
+}
+
+.actions {
+    margin-left: auto;
+}
+
+.actions .btn-login {
+    background-color: transparent;
+    border: 1px solid #4D4D4D;
+    color: #BFBFBF;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.actions .btn-login:hover {
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+
+
+
+
+
 .carousel {
     margin: 0 auto;
     padding: 20px 0;
@@ -108,4 +164,128 @@
 
 .card2:nth-child(3) {
     background: #4300da;
+}
+
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+
+footer {
+    background-color: #1a2235;
+    color: #ffffff;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-column {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer-column h3 {
+    color: #f2911b;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.footer-column ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #f2911b;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.social-icons div {
+    width: 30px;
+    height: 30px;
+    background-color: #f2911b;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons div i {
+    color: #ffffff;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.footer-right p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.footer-buttons {
+    margin-top: 20px;
+}
+
+.footer-buttons a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #ffffff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.footer-buttons a.login {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+}
+
+.footer-buttons a.login:hover {
+    background-color: #ffffff;
+    color: #1a2235;
+}
+
+.footer-buttons a.create-account {
+    background-color: #f2911b;
+}
+
+.footer-buttons a.create-account:hover {
+    background-color: #ffab40;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #a0a0a0;
+}
+
+hr {
+    width: 80%;
+    margin: 0 auto;
+    border: 2px solid orange;
 }
