@@ -51,7 +51,7 @@ html {
 }
 
 
-main{
+main {
     background-color: greenyellow;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr; 
@@ -69,15 +69,13 @@ main{
 
 .carousel {
     margin: 0 auto;
-    padding: 20px 0;
-    max-width: 700px;
     overflow: hidden;
     display: flex;
     flex-direction: column; /* Asegura que los elementos se dispongan en columna */
-    height: 660px;
+    height: 700px;
 }
 
-.carousel > * {
+.carousel>* {
     flex: 0 0 100%;
 }
 
@@ -88,11 +86,25 @@ main{
 
 .group {
     display: flex;
-    flex-direction: column; /* Asegura disposición vertical */
+    flex-direction: column;
+    /* Asegura disposición vertical */
     gap: 20px;
-    padding-bottom: 20px; /* Espacio entre la última y la primera tarjeta */
-    will-change: transform; /* Optimización de animación */
-    animation: scrolling 10s linear infinite;
+    padding-bottom: 20px;
+    /* Espacio entre la última y la primera tarjeta */
+    will-change: transform;
+    /* Optimización de animación */
+    animation: scrollingUp 10s linear infinite;
+}
+.group2 {
+    display: flex;
+    flex-direction: column;
+    /* Asegura disposición vertical */
+    gap: 20px;
+    padding-bottom: 20px;
+    /* Espacio entre la última y la primera tarjeta */
+    will-change: transform;
+    /* Optimización de animación */
+    animation: scrollingDown 10s linear infinite;
 }
 
 .card {
@@ -119,12 +131,26 @@ main{
     background: #4300da;
 }
 
-@keyframes scrolling {
+@keyframes scrollingUp {
     0% {
-        transform: translateY(0); /* Empieza en la posición inicial */
+        transform: translateY(0);
+        /* Empieza en la posición inicial */
     }
+
     100% {
-        transform: translateY(-100%); /* Se mueve hacia arriba */
+        transform: translateY(-100%);
+        /* Se mueve hacia arriba */
+    }
+}
+@keyframes scrollingDown {
+    0% {
+        transform: translateY(-100%);
+        /* Empieza en la posición inicial */
+    }
+
+    100% {
+        transform: translateY(0%);
+        /* Se mueve hacia arriba */
     }
 }
 
@@ -140,7 +166,7 @@ body {
 footer {
     background-color: #1a2235;
     color: #ffffff;
-    padding-right:3.5rem;
+    padding-right: 3.5rem;
     padding-left: 3.5rem;
     padding-top: 1.4rem;
     padding-bottom: 1.4rem;
