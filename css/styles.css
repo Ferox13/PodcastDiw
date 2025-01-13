@@ -52,7 +52,7 @@ html {
 
 
 main {
-    background-color: greenyellow;
+    background-color: #794CF8;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr; 
    margin-top: 1rem;
@@ -280,4 +280,66 @@ hr {
     width: 80%;
     margin: 0 auto;
     border: 2px solid orange;
+}
+
+
+#div1 >h2{
+    font-size: 40px;
+    color: #FFFFFF;
+    text-align: justify;
+}
+#div1 >h3{
+    font-size: 40px;
+    color: #FFFFFF;
+    text-align: justify;
+}
+
+#div1 >p{
+    font-size: 15px;
+    color: #FFFFFF;
+    text-align: justify;
+}
+
+#div2{
+    display: flex;
+    
+}
+#div2 >a{
+   
+    background-color: white;
+    color: black;
+    border: 2px solid green;
+    padding: 10px 20px;
+    text-align: center;
+    align-content: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 30px; 
+    margin-left: 170px;
+}
+#div2 >a:hover{
+    background-color: green;
+    color: white;
+}
+
+#div2>p{
+    margin-left: 15px;
+    color: white;
+}
+
+
+#leftSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: -200px;
+}
+.card:hover{
+    cursor: pointer;
+}
+
+#img1{
+    background-image: url(../img/podcast-programas.jpg);
+    background-size: cover;
 }
