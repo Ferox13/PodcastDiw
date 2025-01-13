@@ -15,7 +15,7 @@ html {
     color: #FFFFFF;
 }
 .header img {
-    max-width: 100px;
+    max-width: 70px;
     border-radius: 10px;
 }
 
@@ -90,3 +90,42 @@ html {
 .episode small {
     color: #aaa;
 }
+/* Sección de introducción, estilo de distribución, fondo y bordes */
+#introSection {
+  display: flex;
+  flex-direction: row;
+  padding: 2%;
+  margin: 0px;
+  background-color: rgb(255, 234, 110, 0.8);
+}
+
+#heroImg{
+  width: 180px;
+  border-radius: 12px;
+  margin-right: 1%;
+}
+
+/* Artículo de introducción, max-width para ajustarse al contenedor */
+#introArticle{
+  max-width: 70%;
+}
+
+/* Estilos para el encabezado dentro del artículo */
+#introArticle h1 {
+  font-size: 1.8rem;
+  color: #333;
+}
+
+/* Estilos para los párrafos dentro del artículo */
+#introArticle p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Imagen de la introducción con tamaño y bordes redondeados */
+#introImg {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+  }
