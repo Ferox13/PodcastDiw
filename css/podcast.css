@@ -19,7 +19,7 @@ html {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    background-color: #2F2F2F;
+    background-color: #1a2235;
     padding: 10px 20px;
     color: #FFFFFF;
 }
@@ -97,6 +97,8 @@ html {
     background-color: #333;
     margin-bottom: 20px;
     border-radius: 10px;
+    cursor: pointer; 
+
 }
 
 .episode h2 {
@@ -150,16 +152,14 @@ html {
 #introImg {
     width: 150px;
     height: auto;
-    border-radius: 8px;
+    border-radius: 12px;
 }
 
 .episodeImg {
     width: 150px;
-    /* Ajusta según necesites */
     flex-shrink: 0;
-    /* Evita que la imagen se encoja */
     height: auto;
-    border-radius: 4px;
+    border-radius: 12px;
 }
 
 .episode-content {
@@ -263,4 +263,115 @@ html {
 
 .cta-button:hover {
     background-color: #4526c0;
+}
+
+/* Footer: Estilos para el pie de página */
+footer {
+    background-color: #1a2235;
+    color: #ffffff;
+    padding: 1.4rem 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.footer-column {
+    flex: 1;
+    margin-right: 1.25rem;
+}
+.footer-column h3 {
+    color: #f2911b;
+    font-size: 1.125rem;
+    margin-bottom: 0.9375rem;
+}
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-column ul li {
+    margin-bottom: 0.625rem;
+    font-size: 0.875rem;
+}
+.footer-column ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.footer-column ul li a:hover {
+    color: #f2911b;
+}
+.social-icons {
+    display: flex;
+    gap: 0.625rem;
+    margin-top: 0.9375rem;
+}
+.social-icons div {
+    width: 1.875rem;
+    height: 1.875rem;
+    background-color: #f2911b;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-icons div i {
+    color: #ffffff;
+}
+.footer-right {
+    text-align: right;
+}
+.footer-right p {
+    margin: 0.625rem 0;
+    font-size: 0.875rem;
+}
+.footer-buttons {
+    margin-top: 1.25rem;
+}
+.footer-buttons a {
+    display: inline-block;
+    padding: 0.625rem 1.25rem;
+    margin-right: 0.625rem;
+    text-decoration: none;
+    font-size: 0.875rem;
+    color: #ffffff;
+    border-radius: 0.3125rem;
+    transition: background-color 0.3s;
+}
+.footer-buttons a.login {
+    background-color: transparent;
+    border: 0.0625rem solid #ffffff;
+}
+.footer-buttons a.login:hover {
+    background-color: #ffffff;
+    color: #1a2235;
+}
+.footer-buttons a.create-account {
+    background-color: #f2911b;
+}
+.footer-buttons a.create-account:hover {
+    background-color: #ffab40;
+}
+.footer-bottom {
+    text-align: center;
+    margin-top: 1.25rem;
+    font-size: 0.75rem;
+    color: #a0a0a0;
+}
+
+/* Línea horizontal en el pie de página */
+hr {
+    width: 80%;
+    margin: 0 auto;
+    border: 0.125rem solid orange;
+}
+
+@keyframes hoverAnimation {
+    from {
+        transform: scale(1);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    to {
+        transform: scale(1.05);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
 }
