@@ -1,68 +1,88 @@
 <!DOCTYPE html>
 
 <html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Podcast</title>
-    <meta name="description" content>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../css/podcast.css">
-  </head>
-  <body>
-    <header class="header">
-      <div class="logo">
-        <img src="../resources/images/link.png"
-          alt="A link to the podcast"></div>
-      <nav class="navigation">
-        <a href="#">Podcasts</a>
-        <a href="#">Audiolibros</a>
-      </nav>
-      <div class="actions">
-        <button class="btn-login">Iniciar sesión</button>
-      </div>
-    </header>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Podcast</title>
+        <meta name="description" content>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/podcast.css">
+        <script src="../js/podcast.js"></script>
+    </head>
+    <body>
+        <header class="header">
+            <div class="logo">
+                <img src="../resources/images/link.png"
+                    alt="A link to the podcast"></div>
+            <nav class="navigation">
+                <a href="./index.html">Podcasts</a>
+                <a href="#">Audiolibros</a>
+            </nav>
+            <div class="actions">
+                <button class="btn-login">Iniciar sesión</button>
+            </div>
+        </header>
 
-    <section id="introSection">
-      <div>
-        <img id="heroImg" src="../resources/images/fg.png"
-          alt="imagen principal">
-        <article id="introArticle">
-          <h1>Figma Fever</h1>
-          <p>El podcast Nº 1 en español sobre diseño web.
+        <section id="introSection">
+            <img id="heroImg" src="../resources/images/fg.png"
+                alt="imagen principal">
+            <article id="introArticle">
+                <h1>Figma Fever</h1>
+                <p>El podcast Nº 1 en español sobre diseño web.
 
-          </article>
+                </article>
 
-        </div>
-
-      </section>
-      <div class="episodes">
-        <div class="episode">
-          <h2>Nadie sabe nada | 12x18 | Postales sonoras desde Ciudad Dua</h2>
-          <p>Ep. 446: Primer 'Nadie Sabe Nada' de 2025 que hemos perpetrado con
-            ahínco. Dicen que si algo funciona no lo toques y eso es lo que
-            hacen Andreu Buenafuente y Berto Romero: no salirse del guion de lo
-            que es el ‘Nadie’...</p>
-          <small>04 ene 2025 - 50 min</small>
-        </div>
-        <div class="episode">
-          <h2>Nadie sabe nada | 12x17 | A las puertas de un nuevo año</h2>
-          <p>Último ‘Nadie Sabe Nada’ de 2024 a pocos días de entrar en un nuevo
-            año. Un año con un número que se presta a rimas típicas. Y Andreu
-            Buenafuente y Berto Romero no tienen este tipo de humor. ¿O sí?
-            Ellos hacen...</p>
-          <small>28 dic 2024 - 50 min</small>
-        </div>
-        <div class="episode">
-          <h2>Nadie sabe nada | 12x16 | Silver Balún nació en Navidad</h2>
-          <p>Este ‘Nadie Sabe Nada’ es el programa 444. ¿No es bonito lo de los
-            tres cuatros? Tan bonito como la Navidad, época en la que
-            desgraciadamente murió Josep Maria Balcells, pero nace Silver Balún
-            Balcells con Andreu...</p>
-          <small>21 dic 2024 - 52 min</small>
-        </div>
-      </div>
-
-      <script src="../js/podcast.js"></script>
-    </body>
-  </html>
+            </section>
+            <div class="episodes">
+               <p >Todos los episodios</p>
+                <div class="episode">
+                    <img class="episodeImg" src="../resources/images/fg.png"
+                        alt="imagen del episodio">
+                    <div class="episode-content">
+                        <h2>Figma Fever | 01x01 | Principios básicos de diseño en Figma</h2>
+                        <p>Ep. 1: En este primer episodio, exploramos los fundamentos de diseño en Figma. Aprende a configurar tu espacio de trabajo y a aprovechar las herramientas esenciales para tus proyectos web.</p>
+                        <small>15 ene 2025 - 40 min</small>
+                    </div>
+                </div>
+                               
+                <div class="episode">
+                    <img class="episodeImg" src="../resources/images/fg.png"
+                        alt="imagen del episodio">
+                    <div class="episode-content">
+                        <h2>Figma Fever | 01x02 | Diseñando interfaces responsivas</h2>
+                        <p>Ep. 2: Descubre cómo crear interfaces web que se adapten perfectamente a cualquier dispositivo. Te enseñamos las mejores prácticas y trucos para lograr un diseño responsive eficaz.</p>
+                        <small>22 ene 2025 - 45 min</small>
+                    </div>
+                </div>
+                
+                <div class="episode">
+                    <img class="episodeImg" src="../resources/images/fg.png"
+                        alt="imagen del episodio">
+                    <div class="episode-content">
+                        <h2>Figma Fever | 01x03 | Plugins esenciales para diseñadores</h2>
+                        <p>Ep. 3: En este episodio, te mostramos los mejores plugins de Figma para mejorar tu flujo de trabajo, desde herramientas de prototipado hasta complementos para exportar activos rápidamente.</p>
+                        <small>29 ene 2025 - 50 min</small>
+                    </div>
+                </div>
+       
+            </div>
+            <div class="modal" id="episodeModal">
+                <div class="modal-header">
+                    <h3>Acerca de este episodio</h3>
+                    <button class="close-modal">✖</button>
+                </div>
+                <div class="modal-content">
+                    <img class="modal-img" src="" alt="Imagen del episodio">
+                    <div class="modal-details">
+                        <h4></h4>
+                        <small></small>
+                        <p></p>
+                    </div>
+                </div>
+                <button class="cta-button">Escuchar gratis</button>
+            </div>
+            
+            <script src="../js/podcast.js"></script>
+        </body>
+    </html>
