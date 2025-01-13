@@ -1,36 +1,32 @@
-document.addEventListener('DOMContentLoaded', (event) => {
-    const modal = document.getElementById("episodeModal");
-    const closeModalButton = document.querySelector(".close-modal");
+document.addEventListener("DOMContentLoaded", (event) => {
+  const modal = document.getElementById("episodeModal");
+  const closeModalButton = document.querySelector(".close-modal");
 
-    if (modal && closeModalButton) {
-        document.querySelectorAll('.episode').forEach(episode => {
-            episode.addEventListener('click', function() {
-                const imgSrc = this.querySelector('.episodeImg')?.src;
-                const title = this.querySelector('h2')?.innerText;
-                const dateAndDuration = this.querySelector('small')?.innerText;
-                const description = this.querySelector('p')?.innerText;
+  document.querySelectorAll(".episode").forEach((episode) => {
+    episode.addEventListener("click", function () {
+      const imgSrc = this.querySelector(".episodeImg")?.src;
+      const title = this.querySelector("h2")?.innerText;
+      const dateAndDuration = this.querySelector("small")?.innerText;
+      const description = this.querySelector("p")?.innerText;
 
-                if (imgSrc && title && dateAndDuration && description) {
-                    modal.querySelector('.modal-img').src = imgSrc;
-                    modal.querySelector('.modal-details h4').innerText = title;
-                    modal.querySelector('.modal-details small').innerText = dateAndDuration;
-                    modal.querySelector('.modal-details p').innerText = description;
+      if (imgSrc && title && dateAndDuration && description) {
+        modal.querySelector(".modal-img").src = imgSrc;
+        modal.querySelector(".modal-details h4").innerText = title;
+        modal.querySelector(".modal-details small").innerText = dateAndDuration;
+        modal.querySelector(".modal-details p").innerText = description;
 
-                    modal.style.display = "flex";
-                }
-            });
-        });
+        modal.style.display = "flex";
+      }
+    });
+  });
 
-        closeModalButton.onclick = function() {
-            modal.style.display = "none";
-        }
+  closeModalButton.onclick = function () {
+    modal.style.display = "none";
+  };
 
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-    } else {
-        console.error("Modal or close button not found in the DOM.");
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
     }
+  };
 });
