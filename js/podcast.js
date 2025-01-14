@@ -8,12 +8,19 @@ document.addEventListener("DOMContentLoaded", (event) => {
       const title = this.querySelector("h2")?.innerText;
       const dateAndDuration = this.querySelector("small")?.innerText;
       const description = this.querySelector("p")?.innerText;
+      const descriptionHidden = this.querySelector("span")?.innerText;
 
       if (imgSrc && title && dateAndDuration && description) {
         modal.querySelector(".modal-img").src = imgSrc;
         modal.querySelector(".modal-details h4").innerText = title;
         modal.querySelector(".modal-details small").innerText = dateAndDuration;
-        modal.querySelector(".modal-details p").innerText = description;
+
+        const shortDescription = description.substring(0, 100);
+        const moreText = description.substring(100);
+
+        modal.querySelector(".short-description").innerText = shortDescription;
+        modal.querySelector(".more-text").innerText = moreText;
+        modal.querySelector(".more-text").innerText += descriptionHidden ;
 
         modal.style.display = "flex";
       }
@@ -29,4 +36,16 @@ document.addEventListener("DOMContentLoaded", (event) => {
       modal.style.display = "none";
     }
   };
+
+  document.querySelector(".read-more").addEventListener("click", function () {
+    const moreText = modal.querySelector(".more-text");
+    console.log(moreText.style.display);
+    if (moreText.style.display === "none" || moreText.style.display === "") {
+      moreText.style.display = "inline";
+      this.innerText = "Leer menos";
+    } else {
+      moreText.style.display = "none";
+      this.innerText = "Leer más";
+    }
+  });
 });

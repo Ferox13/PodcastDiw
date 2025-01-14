@@ -13,6 +13,7 @@ html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    background-color: #000;
 }
 
 .header {
@@ -38,7 +39,7 @@ html {
 .navigation a {
     margin: 0 10px;
     text-decoration: none;
-    color: #BFBFBF;
+    color: #f2911b;
     font-size: 16px;
 }
 
@@ -53,7 +54,7 @@ html {
 .actions .btn-login {
     background-color: transparent;
     border: 1px solid #4D4D4D;
-    color: #BFBFBF;
+    color: #f2911b;
     padding: 5px 15px;
     border-radius: 20px;
     font-size: 14px;
@@ -94,10 +95,10 @@ html {
     gap: 20px;
     align-items: flex-start;
     padding: 20px;
-    background-color: #333;
+    background-color: #7958ff;
     margin-bottom: 20px;
     border-radius: 10px;
-    cursor: pointer; 
+    cursor: pointer;
 
 }
 
@@ -111,7 +112,7 @@ html {
 }
 
 .episode small {
-    color: #aaa;
+    color: white;
 }
 
 /* Sección de introducción, estilo de distribución, fondo y bordes */
@@ -121,7 +122,7 @@ html {
     justify-content: flex-start;
     padding: 2%;
     margin: 0px;
-    background-color: rgb(255, 234, 110, 0.8);
+    background-color: #DBBFF9;
 }
 
 #heroImg {
@@ -144,7 +145,7 @@ html {
 /* Estilos para los párrafos dentro del artículo */
 #introArticle p {
     font-size: 1rem;
-    color: #555;
+    color: black;
     line-height: 1.6;
 }
 
@@ -167,6 +168,10 @@ html {
     flex-direction: column;
     gap: 10px;
 }
+.episode-info-hidden{
+    display: none;
+}
+
 
 .modal {
     display: none;
@@ -177,7 +182,7 @@ html {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1000;
-    background: #fff;
+    background: slategray;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     padding: 20px;
@@ -224,9 +229,9 @@ html {
 }
 
 .modal-img {
-    width: 80px;
-    height: 80px;
-    border-radius: 8px;
+    width: auto;
+    height: 50px;
+    border-radius: 12px;
 }
 
 .modal-details h4 {
@@ -265,6 +270,30 @@ html {
     background-color: #4526c0;
 }
 
+.read-more {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.read-more:hover {
+    background-color: var(--primary-dark);
+}
+
+.short-description {
+    display: inline;
+}
+
+.more-text {
+    display: none;
+    text-align: justify;
+}
+
+
 /* Footer: Estilos para el pie de página */
 footer {
     background-color: #1a2235;
@@ -274,37 +303,45 @@ footer {
     justify-content: space-between;
     align-items: flex-start;
 }
+
 .footer-column {
     flex: 1;
     margin-right: 1.25rem;
 }
+
 .footer-column h3 {
     color: #f2911b;
     font-size: 1.125rem;
     margin-bottom: 0.9375rem;
 }
+
 .footer-column ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
+
 .footer-column ul li {
     margin-bottom: 0.625rem;
     font-size: 0.875rem;
 }
+
 .footer-column ul li a {
     color: #ffffff;
     text-decoration: none;
     transition: color 0.3s;
 }
+
 .footer-column ul li a:hover {
     color: #f2911b;
 }
+
 .social-icons {
     display: flex;
     gap: 0.625rem;
     margin-top: 0.9375rem;
 }
+
 .social-icons div {
     width: 1.875rem;
     height: 1.875rem;
@@ -314,19 +351,24 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
 .social-icons div i {
     color: #ffffff;
 }
+
 .footer-right {
     text-align: right;
 }
+
 .footer-right p {
     margin: 0.625rem 0;
     font-size: 0.875rem;
 }
+
 .footer-buttons {
     margin-top: 1.25rem;
 }
+
 .footer-buttons a {
     display: inline-block;
     padding: 0.625rem 1.25rem;
@@ -337,20 +379,25 @@ footer {
     border-radius: 0.3125rem;
     transition: background-color 0.3s;
 }
+
 .footer-buttons a.login {
     background-color: transparent;
     border: 0.0625rem solid #ffffff;
 }
+
 .footer-buttons a.login:hover {
     background-color: #ffffff;
     color: #1a2235;
 }
+
 .footer-buttons a.create-account {
     background-color: #f2911b;
 }
+
 .footer-buttons a.create-account:hover {
     background-color: #ffab40;
 }
+
 .footer-bottom {
     text-align: center;
     margin-top: 1.25rem;
@@ -363,15 +410,4 @@ hr {
     width: 80%;
     margin: 0 auto;
     border: 0.125rem solid orange;
-}
-
-@keyframes hoverAnimation {
-    from {
-        transform: scale(1);
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    }
-    to {
-        transform: scale(1.05);
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-    }
 }
