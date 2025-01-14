@@ -16,6 +16,7 @@ html {
     padding: 1rem 2rem;
     color: #FFFFFF;
 }
+
 .header img {
     max-width: 4.375rem;
     border-radius: 0.625rem;
@@ -32,9 +33,10 @@ html {
 .navigation a {
     margin: 0 0.625rem;
     text-decoration: none;
-    color: #BFBFBF;
+    color: #f2911b;
     font-size: 1rem;
 }
+
 .navigation a:hover {
     color: #FFFFFF;
 }
@@ -43,18 +45,22 @@ html {
 .actions {
     margin-left: auto;
 }
+
 .actions .btn-login {
     background-color: transparent;
-    border: 0.0625rem solid #4D4D4D;
-    color: #BFBFBF;
+    border: 0.0625rem solid white;
+    color: #f2911b;
     padding: 0.3125rem 0.9375rem;
     border-radius: 1.25rem;
     font-size: 0.875rem;
     cursor: pointer;
+
 }
+
 .actions .btn-login:hover {
     color: #FFFFFF;
     border-color: #FFFFFF;
+    
 }
 
 /* Main Content: Estilos para el área principal de contenido, usando grid */
@@ -78,9 +84,11 @@ main {
     flex-direction: column;
     height: 43.75rem;
 }
-.carousel > * {
+
+.carousel>* {
     flex: 0 0 100%;
 }
+
 .carousel:hover .group {
     animation-play-state: paused;
 }
@@ -94,9 +102,11 @@ main {
     padding-bottom: 1.25rem;
     will-change: transform;
 }
+
 .group {
     animation: scrollingUp 10s linear infinite;
 }
+
 .group2 {
     animation: scrollingDown 10s linear infinite;
 }
@@ -115,12 +125,15 @@ main {
     min-height: 12.5rem;
     cursor: url('../img/microphone-svgrepo-com_resized.svg'), auto;
 }
+
 .card:nth-child(1) {
     background: #7958ff;
 }
+
 .card:nth-child(2) {
     background: #5d34f2;
 }
+
 .card:nth-child(3) {
     background: #4300da;
 }
@@ -130,14 +143,17 @@ main {
     0% {
         transform: translateY(0);
     }
+
     100% {
         transform: translateY(-100%);
     }
 }
+
 @keyframes scrollingDown {
     0% {
         transform: translateY(-100%);
     }
+
     100% {
         transform: translateY(0);
     }
@@ -152,37 +168,45 @@ footer {
     justify-content: space-between;
     align-items: flex-start;
 }
+
 .footer-column {
     flex: 1;
     margin-right: 1.25rem;
 }
+
 .footer-column h3 {
     color: #f2911b;
     font-size: 1.125rem;
     margin-bottom: 0.9375rem;
 }
+
 .footer-column ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
+
 .footer-column ul li {
     margin-bottom: 0.625rem;
     font-size: 0.875rem;
 }
+
 .footer-column ul li a {
     color: #ffffff;
     text-decoration: none;
     transition: color 0.3s;
 }
+
 .footer-column ul li a:hover {
     color: #f2911b;
 }
+
 .social-icons {
     display: flex;
     gap: 0.625rem;
     margin-top: 0.9375rem;
 }
+
 .social-icons div {
     width: 1.875rem;
     height: 1.875rem;
@@ -192,19 +216,24 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
 .social-icons div i {
     color: #ffffff;
 }
+
 .footer-right {
     text-align: right;
 }
+
 .footer-right p {
     margin: 0.625rem 0;
     font-size: 0.875rem;
 }
+
 .footer-buttons {
     margin-top: 1.25rem;
 }
+
 .footer-buttons a {
     display: inline-block;
     padding: 0.625rem 1.25rem;
@@ -215,20 +244,25 @@ footer {
     border-radius: 0.3125rem;
     transition: background-color 0.3s;
 }
+
 .footer-buttons a.login {
     background-color: transparent;
     border: 0.0625rem solid #ffffff;
 }
+
 .footer-buttons a.login:hover {
     background-color: #ffffff;
     color: #1a2235;
 }
+
 .footer-buttons a.create-account {
     background-color: #f2911b;
 }
+
 .footer-buttons a.create-account:hover {
     background-color: #ffab40;
 }
+
 .footer-bottom {
     text-align: center;
     margin-top: 1.25rem;
@@ -244,15 +278,16 @@ hr {
 }
 
 /* Estilos para las secciones dentro de la página */
-#div1 > h2,
-#div1 > h3 {
+#div1>h2,
+#div1>h3 {
     font-size: 2.5rem;
     color: #FFFFFF;
     text-align: justify;
     display: flex;
-    
+
 }
-#div1 > p {
+
+#div1>p {
     font-size: 0.9375rem;
     color: #FFFFFF;
     text-align: justify;
@@ -262,7 +297,8 @@ hr {
 #div2 {
     display: flex;
 }
-#div2 > a {
+
+.btn {
     background-color: white;
     color: black;
     border: 0.125rem solid #1A2235;
@@ -271,16 +307,15 @@ hr {
     align-content: center;
     text-decoration: none;
     border-radius: 1.875rem;
-    margin-left: 10.625rem;
     cursor: url('../img/microphone-svgrepo-com_resized.svg'), auto;
 }
-#div2 > a:hover {
+
+.btn:hover {
     background-color: #38486f;
     color: white;
 }
 
-#div2 > p {
-    margin-left: 0.9375rem;
+#div2>p {
     color: white;
 }
 
@@ -289,8 +324,6 @@ hr {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin-left: -12.5rem;
     margin-bottom: 1.875rem;
 }
 
@@ -299,46 +332,63 @@ hr {
     background-image: url(../img/i1.png);
     background-size: cover;
 }
+#img1>a>img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+   
+}
+
 #img2 {
     background-image: url(../img/i2.png);
     background-size: cover;
 }
+
 #img3 {
     background-image: url(../img/i3.jpg);
     background-size: cover;
 }
+
 #img4 {
     background-image: url(../img/i4.png);
     background-size: cover;
 }
+
 #img5 {
     background-image: url(../img/i5.png);
     background-size: cover;
 }
+
 #img6 {
     background-image: url(../img/i6.png);
     background-size: cover;
 }
+
 #img7 {
     background-image: url(../img/i7.png);
     background-size: cover;
 }
+
 #img8 {
     background-image: url(../img/i8.png);
     background-size: cover;
 }
+
 #img9 {
     background-image: url(../img/i9.png);
     background-size: cover;
 }
+
 #img10 {
     background-image: url(../img/i10.png);
     background-size: cover;
 }
+
 #img11 {
     background-image: url(../img/i11.png);
     background-size: cover;
 }
+
 #img12 {
     background-image: url(../img/i12.png);
     background-size: cover;
