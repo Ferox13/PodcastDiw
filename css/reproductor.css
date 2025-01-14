@@ -1,4 +1,8 @@
 /* Header Styles: Estilos para el encabezado, alineación de logo y navegación */
+
+body{
+    margin: 0;
+}
 .header {
     display: flex;
     justify-content: flex-start;
@@ -50,7 +54,7 @@
 
 
 /* Estilos en style.css */
-body {
+main {
     font-family: Arial, sans-serif;
     background-color: #121212;
     color: white;
