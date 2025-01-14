@@ -1,0 +1,345 @@
+/* General Reset: Establece márgenes, rellenos y tipografía para todo el cuerpo y el HTML */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+
+/* Header Styles: Estilos para el encabezado, alineación de logo y navegación */
+.header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #1A2235;
+    padding: 1rem 2rem;
+    color: #FFFFFF;
+}
+.header img {
+    max-width: 4.375rem;
+    border-radius: 0.625rem;
+}
+
+/* Logo: Estilos para el texto del logo */
+.logo {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #DADADA;
+}
+
+/* Navegación: Estilo para los enlaces en la navegación */
+.navigation a {
+    margin: 0 0.625rem;
+    text-decoration: none;
+    color: #BFBFBF;
+    font-size: 1rem;
+}
+.navigation a:hover {
+    color: #FFFFFF;
+}
+
+/* Acciones: Botón de login con estilo */
+.actions {
+    margin-left: auto;
+}
+.actions .btn-login {
+    background-color: transparent;
+    border: 0.0625rem solid #4D4D4D;
+    color: #BFBFBF;
+    padding: 0.3125rem 0.9375rem;
+    border-radius: 1.25rem;
+    font-size: 0.875rem;
+    cursor: pointer;
+}
+.actions .btn-login:hover {
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+
+/* Main Content: Estilos para el área principal de contenido, usando grid */
+main {
+    background-color: #1d113e;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    margin: 3rem;
+    text-align: justify;
+    column-gap: 1rem;
+    border-radius: 0.625rem;
+    height: 43.75rem;
+    padding: 0 2rem;
+}
+
+/* Carousel: Estilos para el carrusel de imágenes */
+.carousel {
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 43.75rem;
+}
+.carousel > * {
+    flex: 0 0 100%;
+}
+.carousel:hover .group {
+    animation-play-state: paused;
+}
+
+/* Animaciones para el movimiento del contenido dentro del carrusel */
+.group,
+.group2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    padding-bottom: 1.25rem;
+    will-change: transform;
+}
+.group {
+    animation: scrollingUp 10s linear infinite;
+}
+.group2 {
+    animation: scrollingDown 10s linear infinite;
+}
+
+/* Card: Estilos para las tarjetas dentro del carrusel */
+.card {
+    width: 90%;
+    color: white;
+    border-radius: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0.3125rem 0.3125rem 1.25rem 0;
+    padding: 1.25rem;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 12.5rem;
+    cursor: url('../img/microphone-svgrepo-com_resized.svg'), auto;
+}
+.card:nth-child(1) {
+    background: #7958ff;
+}
+.card:nth-child(2) {
+    background: #5d34f2;
+}
+.card:nth-child(3) {
+    background: #4300da;
+}
+
+/* Animaciones: Define el movimiento de los grupos en el carrusel */
+@keyframes scrollingUp {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+@keyframes scrollingDown {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Footer: Estilos para el pie de página */
+footer {
+    background-color: #1a2235;
+    color: #ffffff;
+    padding: 1.4rem 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.footer-column {
+    flex: 1;
+    margin-right: 1.25rem;
+}
+.footer-column h3 {
+    color: #f2911b;
+    font-size: 1.125rem;
+    margin-bottom: 0.9375rem;
+}
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-column ul li {
+    margin-bottom: 0.625rem;
+    font-size: 0.875rem;
+}
+.footer-column ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.footer-column ul li a:hover {
+    color: #f2911b;
+}
+.social-icons {
+    display: flex;
+    gap: 0.625rem;
+    margin-top: 0.9375rem;
+}
+.social-icons div {
+    width: 1.875rem;
+    height: 1.875rem;
+    background-color: #f2911b;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-icons div i {
+    color: #ffffff;
+}
+.footer-right {
+    text-align: right;
+}
+.footer-right p {
+    margin: 0.625rem 0;
+    font-size: 0.875rem;
+}
+.footer-buttons {
+    margin-top: 1.25rem;
+}
+.footer-buttons a {
+    display: inline-block;
+    padding: 0.625rem 1.25rem;
+    margin-right: 0.625rem;
+    text-decoration: none;
+    font-size: 0.875rem;
+    color: #ffffff;
+    border-radius: 0.3125rem;
+    transition: background-color 0.3s;
+}
+.footer-buttons a.login {
+    background-color: transparent;
+    border: 0.0625rem solid #ffffff;
+}
+.footer-buttons a.login:hover {
+    background-color: #ffffff;
+    color: #1a2235;
+}
+.footer-buttons a.create-account {
+    background-color: #f2911b;
+}
+.footer-buttons a.create-account:hover {
+    background-color: #ffab40;
+}
+.footer-bottom {
+    text-align: center;
+    margin-top: 1.25rem;
+    font-size: 0.75rem;
+    color: #a0a0a0;
+}
+
+/* Línea horizontal en el pie de página */
+hr {
+    width: 80%;
+    margin: 0 auto;
+    border: 0.125rem solid orange;
+}
+
+/* Estilos para las secciones dentro de la página */
+#div1 > h2,
+#div1 > h3 {
+    font-size: 2.5rem;
+    color: #FFFFFF;
+    text-align: justify;
+    display: flex;
+    
+}
+#div1 > p {
+    font-size: 0.9375rem;
+    color: #FFFFFF;
+    text-align: justify;
+}
+
+/* Estilos para div2, enlaces y secciones relacionadas */
+#div2 {
+    display: flex;
+}
+#div2 > a {
+    background-color: white;
+    color: black;
+    border: 0.125rem solid #1A2235;
+    padding: 0.625rem 1.25rem;
+    text-align: center;
+    align-content: center;
+    text-decoration: none;
+    border-radius: 1.875rem;
+    margin-left: 10.625rem;
+    cursor: url('../img/microphone-svgrepo-com_resized.svg'), auto;
+}
+#div2 > a:hover {
+    background-color: #38486f;
+    color: white;
+}
+
+#div2 > p {
+    margin-left: 0.9375rem;
+    color: white;
+}
+
+/* Estilo para sección izquierda, con flexbox */
+#leftSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: -12.5rem;
+    margin-bottom: 1.875rem;
+}
+
+/* Estilos para las imágenes de fondo en diversas secciones */
+#img1 {
+    background-image: url(../img/i1.png);
+    background-size: cover;
+}
+#img2 {
+    background-image: url(../img/i2.png);
+    background-size: cover;
+}
+#img3 {
+    background-image: url(../img/i3.jpg);
+    background-size: cover;
+}
+#img4 {
+    background-image: url(../img/i4.png);
+    background-size: cover;
+}
+#img5 {
+    background-image: url(../img/i5.png);
+    background-size: cover;
+}
+#img6 {
+    background-image: url(../img/i6.png);
+    background-size: cover;
+}
+#img7 {
+    background-image: url(../img/i7.png);
+    background-size: cover;
+}
+#img8 {
+    background-image: url(../img/i8.png);
+    background-size: cover;
+}
+#img9 {
+    background-image: url(../img/i9.png);
+    background-size: cover;
+}
+#img10 {
+    background-image: url(../img/i10.png);
+    background-size: cover;
+}
+#img11 {
+    background-image: url(../img/i11.png);
+    background-size: cover;
+}
+#img12 {
+    background-image: url(../img/i12.png);
+    background-size: cover;
+}
