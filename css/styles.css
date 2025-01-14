@@ -249,6 +249,8 @@ hr {
     font-size: 2.5rem;
     color: #FFFFFF;
     text-align: justify;
+    display: flex;
+    
 }
 #div1 > p {
     font-size: 0.9375rem;
@@ -294,7 +296,7 @@ hr {
 
 /* Estilos para las imágenes de fondo en diversas secciones */
 #img1 {
-    background-image: url(../img/podcast-programas.jpg);
+    background-image: url(../img/i1.png);
     background-size: cover;
 }
 #img2 {
