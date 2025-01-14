@@ -1,7 +1,6 @@
-// script.js
 
 document.addEventListener('DOMContentLoaded', () => {
-    const audio = new Audio('ruta-a-tu-audio.mp3');
+    const audio = new Audio('../resources/audio/intro.mp3');
     const playBtn = document.getElementById('playBtn');
     const prevBtn = document.getElementById('prevBtn');
     const nextBtn = document.getElementById('nextBtn');
