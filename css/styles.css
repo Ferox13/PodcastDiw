@@ -75,6 +75,12 @@ main {
     height: 43.75rem;
     padding: 0 2rem;
 }
+/* Aqui estamos haciendo que cuando se reduce la el tamaño de la pantalla a 450px el margen se ajusta para que sea responsive */
+@media screen and (max-width: 450px) {
+    main {
+      margin: 1rem;
+    }
+  }
 
 /* Carousel: Estilos para el carrusel de imágenes */
 .carousel {
@@ -99,7 +105,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
-    padding-bottom: 1.25rem;
+   padding-bottom: 1.5rem;
     will-change: transform;
 }
 
@@ -113,7 +119,7 @@ main {
 
 /* Card: Estilos para las tarjetas dentro del carrusel */
 .card {
-    width: 90%;
+    width: 80%;
     color: white;
     border-radius: 1.5rem;
     box-shadow: rgba(0, 0, 0, 0.1) 0.3125rem 0.3125rem 1.25rem 0;
@@ -167,6 +173,8 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .footer-column {
@@ -222,6 +230,7 @@ footer {
 }
 
 .footer-right {
+    
     text-align: right;
 }
 
