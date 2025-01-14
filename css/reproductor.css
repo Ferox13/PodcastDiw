@@ -2,6 +2,7 @@
 
 body{
     margin: 0;
+    background-color: #121212;
 }
 .header {
     display: flex;
@@ -156,6 +157,8 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 .footer-column {
     flex: 1;
