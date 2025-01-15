@@ -21,26 +21,26 @@ html {
     justify-content: flex-start;
     align-items: center;
     background-color: #1A2235;
-    padding: 10px 20px;
+    padding: 1rem 2rem; /* Cambiado de 10px 20px a 1rem 2rem */
     color: #FFFFFF;
 }
 
 .header img {
-    max-width: 70px;
-    border-radius: 10px;
+    max-width: 4.375rem; /* Cambiado de 70px a 4.375rem */
+    border-radius: 0.625rem; /* Cambiado de 10px a 0.625rem */
 }
 
 .logo {
-    font-size: 20px;
+    font-size: 1.25rem; /* Cambiado de 20px a 1.25rem */
     font-weight: bold;
     color: #DADADA;
 }
 
 .navigation a {
-    margin: 0 10px;
+    margin: 0 0.625rem; /* Cambiado de 10px a 0.625rem */
     text-decoration: none;
     color: #f2911b;
-    font-size: 16px;
+    font-size: 1rem; /* Cambiado de 16px a 1rem */
 }
 
 .navigation a:hover {
@@ -53,11 +53,11 @@ html {
 
 .actions .btn-login {
     background-color: transparent;
-    border: 1px solid #4D4D4D;
+    border: 0.0625rem solid #4D4D4D; /* Cambiado de 1px a 0.0625rem */
     color: #f2911b;
-    padding: 5px 15px;
-    border-radius: 20px;
-    font-size: 14px;
+    padding: 0.3125rem 0.9375rem; /* Cambiado de 5px 15px a 0.3125rem 0.9375rem */
+    border-radius: 1.25rem; /* Cambiado de 20px a 1.25rem */
+    font-size: 0.875rem; /* Cambiado de 14px a 0.875rem */
     cursor: pointer;
 }
 
@@ -68,17 +68,17 @@ html {
 
 .titulo {
     background-color: #d9a39b;
-    padding: 20px;
+    padding: 1.25rem; /* Cambiado de 20px a 1.25rem */
     text-align: center;
 }
 
 .titulo img {
-    max-width: 100px;
-    border-radius: 10px;
+    max-width: 6.25rem; /* Cambiado de 100px a 6.25rem */
+    border-radius: 0.625rem; /* Cambiado de 10px a 0.625rem */
 }
 
 .titulo h1 {
-    margin: 10px 0;
+    margin: 0.625rem 0; /* Cambiado de 10px a 0.625rem */
 }
 
 .titulo p {
@@ -87,32 +87,36 @@ html {
 }
 
 .episodes {
-    padding: 20px;
+    padding: 1.25rem; /* Cambiado de 20px a 1.25rem */
     color: white;
 }
 
 .episode {
     display: flex;
-    gap: 20px;
+    gap: 1.25rem; /* Cambiado de 20px a 1.25rem */
     align-items: flex-start;
-    padding: 20px;
+    padding: 1.25rem; /* Cambiado de 20px a 1.25rem */
     background-color: #1d113e;
-    margin-bottom: 20px;
-    border-radius: 10px;
+    margin-bottom: 1.25rem; /* Cambiado de 20px a 1.25rem */
+    border-radius: 0.625rem; /* Cambiado de 10px a 0.625rem */
     cursor: pointer;
 
 }
 
 .episode h2 {
-    margin: 0 0 10px;
+    margin: 0 0 0.625rem; /* Cambiado de 0 0 10px a 0 0 0.625rem */
     font-size: 1.5rem;
 }
 
 .episode p {
-    margin: 10px 0;
+    margin: 0.625rem 0; /* Cambiado de 10px a 0.625rem */
 }
 
 .episode small {
+    color: #f2911b;
+}
+
+.episodeP {
     color: #f2911b;
 }
 
@@ -127,8 +131,8 @@ html {
 }
 
 #heroImg {
-    width: 180px;
-    border-radius: 12px;
+    width: 11.25rem; /* Cambiado de 180px a 11.25rem */
+    border-radius: 0.75rem; /* Cambiado de 12px a 0.75rem */
     margin-right: 1%;
 }
 
@@ -139,39 +143,44 @@ html {
 
 /* Estilos para el encabezado dentro del artículo */
 #introArticle h1 {
-    font-size: 1.8rem;
+    font-size: 1.8rem; /* 1.8rem es relativo al tamaño de fuente raíz */
     color: #333;
 }
 
 /* Estilos para los párrafos dentro del artículo */
 #introArticle p {
-    font-size: 1rem;
+    font-size: 1rem; /* 1rem es relativo al tamaño de fuente raíz */
     color: black;
-    line-height: 1.6;
+    line-height: 1.6; /* Mantén el line-height como un número para la proporción */
 }
 
 /* Imagen de la introducción con tamaño y bordes redondeados */
 #introImg {
-    width: 150px;
+    width: 10rem; /* 10rem es relativo al tamaño de fuente raíz */
     height: auto;
-    border-radius: 12px;
+    border-radius: 0.75rem; /* 0.75rem es relativo al tamaño de fuente raíz */
 }
 
 .episodeImg {
-    width: 150px;
+    width: 10rem; /* 10rem es relativo al tamaño de fuente raíz */
     flex-shrink: 0;
     height: auto;
-    border-radius: 12px;
+    border-radius: 0.75rem; /* 0.75rem es relativo al tamaño de fuente raíz */
 }
 
 .episode-content {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 0.625rem; /* Cambiado de 10px a 0.625rem */
 }
-.episode-info-hidden{
+
+.episode-info-hidden {
     display: none;
-    
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: justify !important;
+    padding-right: 5%;
+
 }
 
 
@@ -241,7 +250,7 @@ html {
     margin: 0;
     font-size: 16px;
     font-weight: bold;
-   
+
 }
 
 .modal-details small {
@@ -254,6 +263,7 @@ html {
     font-size: 14px;
     line-height: 1.5;
     text-align: justify !important;
+    padding-right: 5%;
 }
 
 .cta-button {

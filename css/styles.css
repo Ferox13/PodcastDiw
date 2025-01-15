@@ -48,7 +48,7 @@ html {
 
 .actions .btn-login {
     background-color: transparent;
-    border: 0.0625rem solid white;
+    border: 0.0625rem solid #4D4D4D;
     color: #f2911b;
     padding: 0.3125rem 0.9375rem;
     border-radius: 1.25rem;

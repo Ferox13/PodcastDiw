@@ -1,5 +1,8 @@
 /* Header Styles: Estilos para el encabezado, alineación de logo y navegación */
 
+html{
+    font-family: Arial, sans-serif;
+}
 body{
     margin: 0;
     background-color: #121212;
@@ -42,7 +45,7 @@ body{
 .actions .btn-login {
     background-color: transparent;
     border: 0.0625rem solid #4D4D4D;
-    color: #BFBFBF;
+    color: #f2911b;
     padding: 0.3125rem 0.9375rem;
     border-radius: 1.25rem;
     font-size: 0.875rem;
@@ -56,7 +59,6 @@ body{
 
 /* Estilos en style.css */
 main {
-    font-family: Arial, sans-serif;
     background-color: #121212;
     color: white;
     display: flex;
