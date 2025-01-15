@@ -129,7 +129,7 @@ main {
     justify-content: center;
     align-items: center;
     min-height: 12.5rem;
-    cursor: url('../img/microphone-svgrepo-com_resized.svg'), auto;
+    cursor: url('../resources/images/microphone-svgrepo-com_resized.svg'), auto;
 }
 
 .card:nth-child(1) {
@@ -364,7 +364,7 @@ hr {
 }
 
 #img5 {
-    background-image: url(.../resources/images/i5.png);
+    background-image: url(../resources/images/i5.png);
     background-size: cover;
 }
 
