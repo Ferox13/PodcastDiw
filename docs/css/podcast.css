@@ -1,12 +1,3 @@
-:root {
-    /* Primary Colors */
-    --primary-color: #7958ff;
-    /* Secondary Colors */
-    --secondary-color: #ffea6e;
-    /* Background Colors */
-    --bg-overlay: rgba(0, 0, 0, 0.5);
-    --bg-modal: #FFFFFF;
-}
 
 body,
 html {
@@ -286,7 +277,7 @@ html {
 }
 
 .read-more {
-    background-color: var(--primary-color);
+    background-color: #7958ff;
     color: white;
     border: none;
     padding: 5px 10px;
@@ -296,7 +287,7 @@ html {
 }
 
 .read-more:hover {
-    background-color: var(--primary-dark);
+    background-color: #1A2235;
 }
 
 .short-description {
