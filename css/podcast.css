@@ -276,7 +276,7 @@ html {
 }
 
 .read-more {
-    background-color: var(--primary-color);
+    background-color: #7958ff;
     color: white;
     border: none;
     padding: 5px 10px;
@@ -286,7 +286,7 @@ html {
 }
 
 .read-more:hover {
-    background-color: var(--primary-dark);
+    background-color: #4526c0;
 }
 
 .short-description {
