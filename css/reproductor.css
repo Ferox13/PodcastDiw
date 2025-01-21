@@ -1,12 +1,14 @@
-/* Header Styles: Estilos para el encabezado, alineación de logo y navegación */
-
-html{
+/* Global Styles: Configuración general de fuente y fondo */
+html {
     font-family: Arial, sans-serif;
 }
-body{
+
+body {
     margin: 0;
     background-color: #121212;
 }
+
+/* Header Styles: Estilos para el encabezado, alineación de logo y navegación */
 .header {
     display: flex;
     justify-content: flex-start;
@@ -15,33 +17,39 @@ body{
     padding: 1rem 2rem;
     color: #FFFFFF;
 }
+
+/* Logo Image: Estilo para la imagen del logo */
 .header img {
     max-width: 4.375rem;
     border-radius: 0.625rem;
 }
 
-/* Logo: Estilos para el texto del logo */
+/* Logo Text: Estilos para el texto del logo */
 .logo {
     font-size: 1.25rem;
     font-weight: bold;
     color: #DADADA;
 }
 
-/* Navegación: Estilo para los enlaces en la navegación */
+/* Navigation Styles: Estilos para los enlaces de navegación */
 .navigation a {
     margin: 0 0.625rem;
     text-decoration: none;
     color: #f2911b;
     font-size: 1rem;
 }
+
+/* Navigation Hover: Cambios de color al pasar el ratón */
 .navigation a:hover {
     color: #FFFFFF;
 }
 
-/* Acciones: Botón de login con estilo */
+/* Actions Section: Botones de acciones, como login */
 .actions {
     margin-left: auto;
 }
+
+/* Login Button: Estilo del botón de login */
 .actions .btn-login {
     background-color: transparent;
     border: 0.0625rem solid #4D4D4D;
@@ -51,13 +59,14 @@ body{
     font-size: 0.875rem;
     cursor: pointer;
 }
+
+/* Login Button Hover: Efecto al pasar el ratón sobre el botón de login */
 .actions .btn-login:hover {
     color: #FFFFFF;
     border-color: #FFFFFF;
 }
 
-
-/* Estilos en style.css */
+/* Main Section: Área principal del contenido */
 main {
     background-color: #121212;
     color: white;
@@ -66,9 +75,10 @@ main {
     align-items: center;
     height: 100vh;
     margin: 0;
-  }
-  
-  .player {
+}
+
+/* Player Container: Contenedor del reproductor */
+.player {
     width: 350px;
     padding: 20px;
     background-color: #181818;
@@ -77,44 +87,51 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  
-  .song-info {
+}
+
+/* Song Info: Estilos de la sección de información de la canción */
+.song-info {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-  }
-  
-  .song-cover {
+}
+
+/* Song Cover: Imagen de portada de la canción */
+.song-cover {
     width: 135px;
     height: 100px;
     border-radius: 5px;
     margin-right: 20px;
-  }
-  
-  .song-details {
+}
+
+/* Song Details: Detalles de la canción */
+.song-details {
     display: flex;
     flex-direction: column;
-  }
-  
-  .song-title {
+}
+
+/* Song Title: Título de la canción */
+.song-title {
     font-weight: bold;
     font-size: 18px;
-  }
-  
-  .song-artist {
+}
+
+/* Song Artist: Nombre del artista */
+.song-artist {
     font-size: 14px;
     color: #b3b3b3;
-  }
-  
-  .controls {
+}
+
+/* Controls Section: Estilo de los controles del reproductor */
+.controls {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
-  }
-  
-  .control-btn {
+}
+
+/* Control Buttons: Botones de reproducción, pausa, etc. */
+.control-btn {
     background-color: transparent;
     border: none;
     color: white;
@@ -122,36 +139,40 @@ main {
     padding: 10px;
     cursor: pointer;
     transition: 0.3s;
-  }
-  
-  .control-btn:hover {
+}
+
+/* Control Buttons Hover: Efecto hover en los botones */
+.control-btn:hover {
     color: #1db954;
-  }
-  
-  .progress-bar {
+}
+
+/* Progress Bar: Barra de progreso de la canción */
+.progress-bar {
     width: 100%;
     margin-bottom: 10px;
-  }
-  
-  input[type="range"] {
+}
+
+/* Range Input: Estilos para el control de rango de la barra de progreso */
+input[type="range"] {
     width: 100%;
     background-color: #535353;
     border-radius: 5px;
     height: 5px;
     cursor: pointer;
     outline: none;
-  }
-  
-  input[type="range"]:hover {
-    background-color: #1db954;
-  }
-  
-  .time-info {
-    font-size: 14px;
-  }
-  
+}
 
-  /* Footer: Estilos para el pie de página */
+/* Range Input Hover: Efecto al pasar el ratón */
+input[type="range"]:hover {
+    background-color: #1db954;
+}
+
+/* Time Info: Información del tiempo de reproducción */
+.time-info {
+    font-size: 14px;
+}
+
+/* Footer Styles: Estilos para el pie de página */
 footer {
     background-color: #1a2235;
     color: #ffffff;
@@ -162,37 +183,53 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
 }
+
+/* Footer Columns: Estilos de las columnas del footer */
 .footer-column {
     flex: 1;
     margin-right: 1.25rem;
 }
+
+/* Footer Column Headers: Encabezados de las columnas del footer */
 .footer-column h3 {
     color: #f2911b;
     font-size: 1.125rem;
     margin-bottom: 0.9375rem;
 }
+
+/* Footer Column Lists: Listas dentro de las columnas */
 .footer-column ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
+
+/* Footer Column List Items: Elementos de las listas */
 .footer-column ul li {
     margin-bottom: 0.625rem;
     font-size: 0.875rem;
 }
+
+/* Footer Column Links: Enlaces en las listas */
 .footer-column ul li a {
     color: #ffffff;
     text-decoration: none;
     transition: color 0.3s;
 }
+
+/* Footer Column Links Hover: Efecto hover en los enlaces */
 .footer-column ul li a:hover {
     color: #f2911b;
 }
+
+/* Social Icons: Estilos para los íconos sociales */
 .social-icons {
     display: flex;
     gap: 0.625rem;
     margin-top: 0.9375rem;
 }
+
+/* Social Icon Containers: Contenedor para los íconos sociales */
 .social-icons div {
     width: 1.875rem;
     height: 1.875rem;
@@ -202,19 +239,29 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
+/* Social Icon Styles: Estilos para los íconos sociales */
 .social-icons div i {
     color: #ffffff;
 }
+
+/* Footer Right Section: Sección derecha del pie de página */
 .footer-right {
     text-align: right;
 }
+
+/* Footer Right Text: Texto en la sección derecha */
 .footer-right p {
     margin: 0.625rem 0;
     font-size: 0.875rem;
 }
+
+/* Footer Buttons: Botones en el pie de página */
 .footer-buttons {
     margin-top: 1.25rem;
 }
+
+/* Footer Button Links: Enlaces con estilo de botones */
 .footer-buttons a {
     display: inline-block;
     padding: 0.625rem 1.25rem;
@@ -225,20 +272,30 @@ footer {
     border-radius: 0.3125rem;
     transition: background-color 0.3s;
 }
+
+/* Login Button in Footer: Botón de login */
 .footer-buttons a.login {
     background-color: transparent;
     border: 0.0625rem solid #ffffff;
 }
+
+/* Login Button Hover: Hover para el botón de login */
 .footer-buttons a.login:hover {
     background-color: #ffffff;
     color: #1a2235;
 }
+
+/* Create Account Button: Botón de crear cuenta */
 .footer-buttons a.create-account {
     background-color: #f2911b;
 }
+
+/* Create Account Button Hover: Hover para el botón de crear cuenta */
 .footer-buttons a.create-account:hover {
     background-color: #ffab40;
 }
+
+/* Footer Bottom Text: Texto en la parte inferior del footer */
 .footer-bottom {
     text-align: center;
     margin-top: 1.25rem;
@@ -246,26 +303,9 @@ footer {
     color: #a0a0a0;
 }
 
-/* Línea horizontal en el pie de página */
+/* Horizontal Line in Footer: Línea horizontal en el pie de página */
 hr {
     width: 80%;
     margin: 0 auto;
     border: 0.125rem solid orange;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

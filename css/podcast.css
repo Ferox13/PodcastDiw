@@ -1,3 +1,4 @@
+/* Estilos generales para eliminar márgenes y aplicar fuentes y fondo base */
 body,
 html {
     margin: 0;
@@ -6,111 +7,128 @@ html {
     background-color: #000;
 }
 
+/* Estilos para el encabezado principal, uso de flexbox para disposición */
 .header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     background-color: #1A2235;
-    padding: 1rem 2rem; /* Cambiado de 10px 20px a 1rem 2rem */
+    padding: 1rem 2rem; 
     color: #FFFFFF;
 }
 
+/* Configuración de la imagen dentro del encabezado */
 .header img {
-    max-width: 4.375rem; /* Cambiado de 70px a 4.375rem */
-    border-radius: 0.625rem; /* Cambiado de 10px a 0.625rem */
+    max-width: 4.375rem; 
+    border-radius: 0.625rem; 
 }
 
+/* Estilos del logo dentro del encabezado */
 .logo {
-    font-size: 1.25rem; /* Cambiado de 20px a 1.25rem */
+    font-size: 1.25rem;
     font-weight: bold;
     color: #DADADA;
 }
 
+/* Estilos para enlaces de navegación */
 .navigation a {
-    margin: 0 0.625rem; /* Cambiado de 10px a 0.625rem */
+    margin: 0 0.625rem; 
     text-decoration: none;
     color: #f2911b;
-    font-size: 1rem; /* Cambiado de 16px a 1rem */
+    font-size: 1rem; 
 }
 
+/* Efecto hover en los enlaces de navegación */
 .navigation a:hover {
     color: #FFFFFF;
 }
 
+/* Estilos para el contenedor de acciones en el encabezado */
 .actions {
     margin-left: auto;
 }
 
+/* Botón de inicio de sesión, diseño con borde y colores */
 .actions .btn-login {
     background-color: transparent;
-    border: 0.0625rem solid #4D4D4D; /* Cambiado de 1px a 0.0625rem */
+    border: 0.0625rem solid #4D4D4D; 
     color: #f2911b;
-    padding: 0.3125rem 0.9375rem; /* Cambiado de 5px 15px a 0.3125rem 0.9375rem */
-    border-radius: 1.25rem; /* Cambiado de 20px a 1.25rem */
-    font-size: 0.875rem; /* Cambiado de 14px a 0.875rem */
+    padding: 0.3125rem 0.9375rem; 
+    border-radius: 1.25rem; 
+    font-size: 0.875rem; 
     cursor: pointer;
 }
 
+/* Efecto hover en el botón de inicio de sesión */
 .actions .btn-login:hover {
     color: #FFFFFF;
     border-color: #FFFFFF;
 }
 
+/* Estilos para el título de la página */
 .titulo {
     background-color: #d9a39b;
-    padding: 1.25rem; /* Cambiado de 20px a 1.25rem */
+    padding: 1.25rem; 
     text-align: center;
 }
 
+/* Configuración de la imagen dentro del título */
 .titulo img {
-    max-width: 6.25rem; /* Cambiado de 100px a 6.25rem */
-    border-radius: 0.625rem; /* Cambiado de 10px a 0.625rem */
+    max-width: 6.25rem; 
+    border-radius: 0.625rem; 
 }
 
+/* Estilos para el encabezado principal del título */
 .titulo h1 {
-    margin: 0.625rem 0; /* Cambiado de 10px a 0.625rem */
+    margin: 0.625rem 0; 
 }
 
+/* Estilo para los párrafos dentro del título */
 .titulo p {
     font-size: 1rem;
     color: white;
 }
 
+/* Contenedor principal para la sección de episodios */
 .episodes {
-    padding: 1.25rem; /* Cambiado de 20px a 1.25rem */
+    padding: 1.25rem; 
     color: white;
 }
 
+/* Diseño individual de cada episodio */
 .episode {
     display: flex;
-    gap: 1.25rem; /* Cambiado de 20px a 1.25rem */
+    gap: 1.25rem; 
     align-items: flex-start;
-    padding: 1.25rem; /* Cambiado de 20px a 1.25rem */
+    padding: 1.25rem; 
     background-color: #1d113e;
-    margin-bottom: 1.25rem; /* Cambiado de 20px a 1.25rem */
-    border-radius: 0.625rem; /* Cambiado de 10px a 0.625rem */
+    margin-bottom: 1.25rem; 
+    border-radius: 0.625rem; 
     cursor: pointer;
-
 }
 
+/* Estilo del título de cada episodio */
 .episode h2 {
-    margin: 0 0 0.625rem; /* Cambiado de 0 0 10px a 0 0 0.625rem */
+    margin: 0 0 0.625rem; 
     font-size: 1.5rem;
 }
 
+/* Estilo para párrafos dentro de los episodios */
 .episode p {
-    margin: 0.625rem 0; /* Cambiado de 10px a 0.625rem */
+    margin: 0.625rem 0; 
 }
 
+/* Estilo para texto pequeño dentro de los episodios */
 .episode small {
     color: #f2911b;
 }
 
+/* Clase adicional para texto especial en los episodios */
 .episodeP {
     color: #f2911b;
 }
 
-/* Sección de introducción, estilo de distribución, fondo y bordes */
+/* Sección introductoria con disposición flexible y fondo personalizado */
 #introSection {
     display: flex;
     flex-direction: row;
@@ -120,60 +138,63 @@ html {
     background-color: #DBBFF9;
 }
 
+/* Imagen destacada en la introducción */
 #heroImg {
-    width: 11.25rem; /* Cambiado de 180px a 11.25rem */
-    border-radius: 0.75rem; /* Cambiado de 12px a 0.75rem */
+    width: 11.25rem; 
+    border-radius: 0.75rem; 
     margin-right: 1%;
 }
 
-/* Artículo de introducción, max-width para ajustarse al contenedor */
+/* Configuración del artículo de introducción */
 #introArticle {
     max-width: 70%;
 }
 
-/* Estilos para el encabezado dentro del artículo */
+/* Encabezado dentro del artículo de introducción */
 #introArticle h1 {
-    font-size: 1.8rem; /* 1.8rem es relativo al tamaño de fuente raíz */
+    font-size: 1.8rem; 
     color: #333;
 }
 
-/* Estilos para los párrafos dentro del artículo */
+/* Párrafos dentro del artículo de introducción */
 #introArticle p {
-    font-size: 1rem; /* 1rem es relativo al tamaño de fuente raíz */
+    font-size: 1rem; 
     color: black;
-    line-height: 1.6; /* Mantén el line-height como un número para la proporción */
+    line-height: 1.6; 
 }
 
-/* Imagen de la introducción con tamaño y bordes redondeados */
+/* Imagen secundaria de introducción */
 #introImg {
-    width: 10rem; /* 10rem es relativo al tamaño de fuente raíz */
+    width: 10rem; 
     height: auto;
-    border-radius: 0.75rem; /* 0.75rem es relativo al tamaño de fuente raíz */
+    border-radius: 0.75rem; 
 }
 
+/* Imagen de episodio con tamaño y proporción fija */
 .episodeImg {
-    width: 10rem; /* 10rem es relativo al tamaño de fuente raíz */
+    width: 10rem; 
     flex-shrink: 0;
     height: auto;
-    border-radius: 0.75rem; /* 0.75rem es relativo al tamaño de fuente raíz */
+    border-radius: 0.75rem; 
 }
 
+/* Contenedor de contenido de episodio con disposición flexible */
 .episode-content {
     display: flex;
     flex-direction: column;
-    gap: 0.625rem; /* Cambiado de 10px a 0.625rem */
+    gap: 0.625rem; 
 }
 
+/* Información oculta adicional de los episodios */
 .episode-info-hidden {
     display: none;
     font-size: 14px;
     line-height: 1.5;
     text-align: justify !important;
     padding-right: 5%;
-
 }
 
-
+/* Estilos para el modal emergente */
 .modal {
     display: none;
     flex-direction: column;
@@ -191,7 +212,7 @@ html {
     color: white;
 }
 
-/* Add overlay background */
+/* Fondo oscuro para el modal */
 .modal::before {
     content: '';
     position: fixed;
@@ -202,9 +223,9 @@ html {
     background: rgba(0, 0, 0, 0.5);
     z-index: -1;
     border-radius: 10px;
-
 }
 
+/* Encabezado del modal */
 .modal-header {
     display: flex;
     justify-content: space-between;
@@ -212,12 +233,14 @@ html {
     margin-bottom: 10px;
 }
 
+/* Título del modal */
 .modal-header h3 {
     margin: 0;
     font-size: 18px;
     font-weight: bold;
 }
 
+/* Botón para cerrar el modal */
 .close-modal {
     background: none;
     border: none;
@@ -225,30 +248,34 @@ html {
     cursor: pointer;
 }
 
+/* Contenedor de contenido dentro del modal */
 .modal-content {
     display: flex;
     gap: 15px;
 }
 
+/* Imagen dentro del modal */
 .modal-img {
     width: auto;
     height: 50px;
     border-radius: 12px;
 }
 
+/* Detalles dentro del modal */
 .modal-details h4 {
     margin: 0;
     font-size: 16px;
     font-weight: bold;
-
 }
 
+/* Estilo para texto pequeño en los detalles del modal */
 .modal-details small {
     color: #f2911b;
     display: block;
     margin: 5px 0;
 }
 
+/* Párrafos dentro de los detalles del modal */
 .modal-details p {
     font-size: 14px;
     line-height: 1.5;
@@ -256,6 +283,7 @@ html {
     padding-right: 5%;
 }
 
+/* Botón de llamada a la acción */
 .cta-button {
     display: block;
     width: 100%;
@@ -271,10 +299,12 @@ html {
     cursor: pointer;
 }
 
+/* Hover para el botón de llamada a la acción */
 .cta-button:hover {
     background-color: #4526c0;
 }
 
+/* Botón "leer más" */
 .read-more {
     background-color: #7958ff;
     color: white;
@@ -285,21 +315,23 @@ html {
     margin-top: 10px;
 }
 
+/* Hover para el botón "leer más" */
 .read-more:hover {
     background-color: #4526c0;
 }
 
+/* Texto breve dentro de la descripción */
 .short-description {
     display: inline;
 }
 
+/* Texto extendido oculto */
 .more-text {
     display: none;
     text-align: justify;
 }
 
-
-/* Footer: Estilos para el pie de página */
+/* Estilos del pie de página */
 footer {
     background-color: #1a2235;
     color: #ffffff;
@@ -311,44 +343,52 @@ footer {
     flex-wrap: wrap;
 }
 
+/* Columna dentro del pie de página */
 .footer-column {
     flex: 1;
     margin-right: 1.25rem;
 }
 
+/* Títulos de las columnas en el pie de página */
 .footer-column h3 {
     color: #f2911b;
     font-size: 1.125rem;
     margin-bottom: 0.9375rem;
 }
 
+/* Listas dentro de las columnas del pie de página */
 .footer-column ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
+/* Elementos de las listas en el pie de página */
 .footer-column ul li {
     margin-bottom: 0.625rem;
     font-size: 0.875rem;
 }
 
+/* Enlaces dentro de las listas del pie de página */
 .footer-column ul li a {
     color: #ffffff;
     text-decoration: none;
     transition: color 0.3s;
 }
 
+/* Hover en los enlaces del pie de página */
 .footer-column ul li a:hover {
     color: #f2911b;
 }
 
+/* Iconos sociales en el pie de página */
 .social-icons {
     display: flex;
     gap: 0.625rem;
     margin-top: 0.9375rem;
 }
 
+/* Contenedor de iconos sociales */
 .social-icons div {
     width: 1.875rem;
     height: 1.875rem;
@@ -359,23 +399,28 @@ footer {
     align-items: center;
 }
 
+/* Iconos dentro del contenedor */
 .social-icons div i {
     color: #ffffff;
 }
 
+/* Sección derecha del pie de página */
 .footer-right {
     text-align: right;
 }
 
+/* Párrafos en la sección derecha del pie de página */
 .footer-right p {
     margin: 0.625rem 0;
     font-size: 0.875rem;
 }
 
+/* Botones en el pie de página */
 .footer-buttons {
     margin-top: 1.25rem;
 }
 
+/* Estilos para los enlaces del pie de página */
 .footer-buttons a {
     display: inline-block;
     padding: 0.625rem 1.25rem;
@@ -387,24 +432,29 @@ footer {
     transition: background-color 0.3s;
 }
 
+/* Botón de inicio de sesión en el pie de página */
 .footer-buttons a.login {
     background-color: transparent;
     border: 0.0625rem solid #ffffff;
 }
 
+/* Hover para el botón de inicio de sesión en el pie de página */
 .footer-buttons a.login:hover {
     background-color: #ffffff;
     color: #1a2235;
 }
 
+/* Botón para crear cuenta en el pie de página */
 .footer-buttons a.create-account {
     background-color: #f2911b;
 }
 
+/* Hover para el botón de crear cuenta */
 .footer-buttons a.create-account:hover {
     background-color: #ffab40;
 }
 
+/* Sección inferior del pie de página */
 .footer-bottom {
     text-align: center;
     margin-top: 1.25rem;
@@ -412,7 +462,7 @@ footer {
     color: #a0a0a0;
 }
 
-/* Línea horizontal en el pie de página */
+/* Línea horizontal decorativa en el pie de página */
 hr {
     width: 80%;
     margin: 0 auto;
