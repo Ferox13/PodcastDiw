@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", (event) => {
   const modal = document.getElementById("episodeModal");
   const closeModalButton = document.querySelector(".close-modal");
+  const musica="Música creada por el equipo de FigmaFever usando SunoAI.";
 
   document.querySelectorAll(".episode").forEach((episode) => {
     episode.addEventListener("click", function () {
@@ -20,7 +21,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
         modal.querySelector(".short-description").innerText = shortDescription;
         modal.querySelector(".more-text").innerText = moreText;
-        modal.querySelector(".more-text").innerText += descriptionHidden ;
+        modal.querySelector(".more-text").innerText += descriptionHidden+"\n"+musica;
 
         modal.style.display = "flex";
       }
